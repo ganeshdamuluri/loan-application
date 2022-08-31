@@ -17,34 +17,43 @@
 
 If you are using Ubuntu please follow following steps from *CLI (Command Line Inteface)
 
-**sudo apt update**
-**sudo apt install apt-transport-https ca-certificates curl software-properties-common**
-**curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -**
-**curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - | apt-get update**
-**sudo apt-get install docker-ce**
-**DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}**
-**mkdir -p $DOCKER_CONFIG/cli-plugins**
-**curl -SL https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose**
-**chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose**
-
+```
+- sudo apt update
+- sudo apt install apt-transport-https ca-certificates curl software-properties-common
+- curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+- curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - | apt-get update
+- sudo apt-get install docker-ce
+- DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
+- mkdir -p $DOCKER_CONFIG/cli-plugins
+- curl -SL https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose
+- chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
+```
 To check installation run the follwing command in your cli
 
-**sudo docker run hello-world**
+```
+- sudo docker run hello-world
+```
 
 ## Steps to setup application
 
 Clone the Application in your local in CLI using following command 
 
-**git clone https://github.com/ganeshdamuluri/loan-application.git**
-**cd loan-application**
+```
+- git clone https://github.com/ganeshdamuluri/loan-application.git
+- cd loan-application
+```
 
 ### Windows
 
-**docker-compose up**
+```
+- docker-compose up
+```
 
 ### UBUNTU
 
-**sudo docker-compose up -d**
+```
+- sudo docker-compose up -d
+```
 
 ## Code of Conduct
 
