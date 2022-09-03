@@ -55,6 +55,12 @@ Clone the Application in your local in CLI using following command
 - sudo docker-compose up -d
 ```
 
+### Commands for use
+```
+winpty docker run composer update
+winpty docker run php artisan 
+```
+
 ## Code of Conduct
 
 In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
@@ -66,3 +72,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+

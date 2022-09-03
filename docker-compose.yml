@@ -28,6 +28,7 @@ services:
       - ./nginx/conf.d:/etc/nginx/conf.d/
     networks:
       - mynetwork
+      
   #Mysl Service
   db:
     image: mysql:8
@@ -37,6 +38,11 @@ services:
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
       MYSQL_PASSWORD: ${DB_PASSWORD}
       MYSQL_USER: ${DB_USERNAME}
+      MYSQL_TCP_PORT: 3307
+    ports:
+    - 3307:3307
+    expose:
+      - 3307
     networks:
       - mynetwork
       
